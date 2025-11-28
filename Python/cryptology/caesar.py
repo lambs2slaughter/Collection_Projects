@@ -1,9 +1,11 @@
 import string
 
-class CaesarCypher:
-    def __init__(self, shift, plainText):
-        self.plainText = str.lower(plainText)
-        self.shift = int()
-        self.alphabets = [string.ascii_lowercase, string.ascii_uppercase, string.digits]
-    def printAlphabets(self):
-        print(self.alphabets)
+global_shift = 0
+global_plainText = ''
+global_alphabet = string.ascii_lowercase
+
+def Caesar(shift, plainText, alphabet):
+    def shift_alphabet(alphabet):
+        return alphabet[shift:]+alphabet[:shift]
+    def encrypt():
+        table = map()
